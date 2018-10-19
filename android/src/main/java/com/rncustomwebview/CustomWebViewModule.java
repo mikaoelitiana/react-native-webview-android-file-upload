@@ -254,7 +254,7 @@ public class CustomWebViewModule extends ReactContextBaseJavaModule implements A
     }
 
     private Boolean acceptsImages(String[] types) {
-        return isArrayEmpty(types) || arrayContainsString(types, "image");
+        return isArrayEmpty(types) || arrayContainsString(types, "image") || arrayContainsString(types, ".jpg");
     }
 
     private Boolean acceptsVideo(String[] types) {
